@@ -1,0 +1,1 @@
+atuple("apple","banana","cherry")
