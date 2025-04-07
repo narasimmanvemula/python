@@ -1,0 +1,5 @@
+1. Use Flask-Session to store session data in Redis instead of cookies.
+2. Encrypt session data before storing it.
+
+
+Use docker, docker-compose

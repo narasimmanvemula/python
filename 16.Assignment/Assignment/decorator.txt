@@ -1,0 +1,7 @@
+
+With class & method, get posts from:
+    https://jsonplaceholder.typicode.com/posts
+    - For example, use requests plugin to get the posts
+    - Example using logger plugin to write all post details from the above API
+    - Use a decorator for logging operation, so that it shall be used as '@logger' rather than using logger.info() in all other functions
+

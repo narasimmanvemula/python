@@ -1,0 +1,11 @@
+Attached are the two files. 
+village-1.json
+village-2.json
+
+Create a new file with all details, where the person belongs to :
+- (a) Both the villages
+- (b) Only in village-1
+- (c) Only in village-2
+
+
+

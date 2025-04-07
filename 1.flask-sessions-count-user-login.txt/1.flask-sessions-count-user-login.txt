@@ -1,0 +1,4 @@
+1. Implement a simple counter that tracks how many times a user visits your site using Flask sessions.
+2. Display the count on the homepage and reset it when the user logs out.
+
+Use docker, docker-compose

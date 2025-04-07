@@ -1,0 +1,18 @@
+[dbConfig]
+db_host = 'localhost'
+db_port = 3306
+
+[fileConfig]
+allowedFileSize ='2MB'
+maxFilesCount = 20
+
+[sessionTimings]
+
+[weekends]
+time='7.30 pm'
+[weekdays]
+time='10 pm'
+
+[logging-production]
+level='debug'
+

@@ -1,0 +1,9 @@
+
+Write mongodb query to find all employees who travelled to atleast one country.
+
+
+Write mongodb query to find all employees with no travel experience.
+
+
+Write mongodb query to find all employees who travelled to exactly one country.
+

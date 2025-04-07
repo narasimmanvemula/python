@@ -1,0 +1,29 @@
+// profiling is enabled for operations that take more than 100 milliseconds.
+db.setProfilingLevel(1, { slowms: 100 });
+
+// disable
+db.setProfilingLevel(0);
+
+/* granularity
+
+0: No profiling (default).
+
+1: Profiles slow operations (only operations that exceed a certain threshold are profiled).
+
+2: Profiles all operations.
+
+*/
+
+// return queries that took more than 100 milliseconds to execute.
+db.system.profile.find({ millis: { $gt: 100 } }).pretty();
+
+// sorts by timestamp (ts) and limits the results to the last 1000 profile entries.
+db.system.profile.find().sort({ ts: -1 }).limit(1000).pretty();
+
+// execution stats
+db.system.profile.find({ field: "value" }).explain("executionStats");
+
+// enables profiling across all databases
+use admin
+//db.setProfilingLevel(1, { slowms: 100 });
+db.setProfilingLevel(2);

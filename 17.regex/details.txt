@@ -1,0 +1,54 @@
+# validate input string is an "email"
+
+ravi@gmail.com 
+@gmail.com  x
+ravi@.com   x
+ravi@gmail.tv
+ravi@gmail  x
+123ravi@gmail.co.in 
+_123ravi@gmail.com
+$123ravi@gmail.com   x
+
+
+
+allowed chars:
+portion 1: _ , a-z , A-Z , 0-9
+@
+portion 2: _ , a-z , A-Z , 0-9
+.
+portion 3:  a-z
+
+=> Common matching pattern for an email.
+
+
+Refinement 1:
+
+portion 1: _ , [a-z] , A-Z , 0-9
+@
+portion 2: _ , a-z , A-Z , 0-9
+.
+portion 3:  a-z
+
+[a-z]
+    Lower Limit
+    Upper Limit
+    Range
+[a-z]?
+[a-z]*  Zer or more times
+[a-z]+
+[a-z]$  Ends with
+^[a-z]  Starts with
+
+/w
+/d
+[0-9]
+
+[abdfg] only a b d f g
+
+yyyy
+yy
+ya*y
+
+
+[a-z]{2, 50}
+[a-z]{2, }

@@ -1,0 +1,19 @@
+
+Development
+Testing
+Stage
+Performance
+Pre-Prod
+Production
+
+
+QA
+Stage
+Production
+
+
+Development
+Test (QA) Environment 
+Stage Environment
+Pre-Prod
+Prod

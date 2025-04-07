@@ -1,0 +1,5 @@
+1. Create a shopping cart system where users can add or remove items.
+2. Store cart items in the session so they persist between page refreshes.
+3. Provide an option to clear the cart.
+
+Use docker, docker-compose

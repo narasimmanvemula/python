@@ -1,0 +1,3 @@
+Write a mongodb query to find all employees with similar email domains 
+(Hint: with "bugsall.com" domain, there are three employees)
+

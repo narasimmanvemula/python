@@ -1,0 +1,4 @@
+1. Set an expiration time for sessions (e.g., 5 minutes).
+2. If the user is inactive for more than 5 minutes, they should be logged out automatically.
+
+Use docker, docker-compose

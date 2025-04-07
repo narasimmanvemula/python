@@ -1,0 +1,53 @@
+DB: college
+    collection: student
+
+    db["student"].insert({
+    "firstName": "Ravi",
+    "createdAt": "1997-07-16Z19:20:30.45",
+    "age": 60,
+    "address": {
+        "street": "Bajan Kovil",
+        "doorNo": 20,
+        "Taluk": "UKT"
+    },
+    "adhaarNo": "8976-787-7899"
+})
+
+    db["student"].insert({
+    "firstName": "Rajan",
+    "createdAt": "1997-07-16Z19:20:30.45",
+    "age": 60,
+    "address": {
+        "street": "Bajan Kovil",
+        "doorNo": 20,
+        "Taluk": "UKT"
+    },
+    "adhaarNo": "8987-797-7999"
+})
+
+db["student"].insert({
+    "firstName": "Radha",
+    "createdAt": "1997-07-16Z19:20:30.45",
+    "age": 65,
+    "address": {
+        "street": "Bajan Kovil",
+        "doorNo": 20,
+        "Taluk": "UKT"
+    },
+    "adhaarNo": "9976-9909-8899"
+})
+
+Find all documents with firstName as 'Ravi':
+db["student"].find({"firstName": "Ravi"})
+
+Find all documents with firstName as 'RaviR':
+db["student"].find({"firstName": "RaviR"})
+
+Update document with Ravi as firstName with adhaarNo as 8976-787-7800:
+db["student"].updateOne({"firstName": "Ravi"}, {"$set":{"adhaarNo": "8976-787-7800"}})
+
+Delete all documents with adhaarNo as 8976-787-7800:
+db["student"].deleteOne({"adhaarNo": "8976-787-7800"})
+
+Update all documents where age is 60 to 16:
+db["student"].updateMany({"age":"60"}, {"$set":{"age":"16"}})

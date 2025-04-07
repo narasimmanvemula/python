@@ -1,0 +1,15 @@
+Operation:
+    I/O operations
+        file handling
+        DB operations
+        API integrations
+    Data Handling    
+        Type casting (conversions: parse int)
+        Read JSON data 
+            JSON.parse()
+            JSON.stringify()
+        Cryptography related operations
+            encode / salt
+            decode / salt
+        Algorithm failures
+    Logging, Configuration failures    

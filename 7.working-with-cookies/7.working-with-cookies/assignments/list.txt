@@ -1,0 +1,8 @@
+Assignments:
+
+1. write python program to set cookie "username" with value "Raju VB" in encrypted form for all calls in flask application.
+
+2. write an api to clear all cookies ( as in cookie-basics.zip do not remove one by one, but remove all cookies in one shot)
+
+
+Note: for encryption use https://pypi.org/project/pycrypto/
